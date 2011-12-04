@@ -1,21 +1,13 @@
-require "rubygems"
-
 n=100
-p input_number = (1..n).to_a
-p input_sum=input_number.inject(){|result,elem|result*elem}
-p input_sum.class
+input_number = (1..n).to_a
+input_sum=input_number.inject{|result,elem|result*elem}
 input_sum_string=input_sum.to_s
-p digit_amount=input_sum_string.size
-
+digit_amount=input_sum_string.size
 i=0
-output=[]
-#output=0
+output=0
 while i<digit_amount
-output[i]=input_sum%10
-#output+=input_sum%10
-p input_sum=input_sum/10
+output+=input_sum%10
+input_sum=input_sum/10
 i=i.next
 end
-
-p output
 p result=output.inject(){|result,elem|result+elem}
