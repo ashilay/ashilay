@@ -1,6 +1,5 @@
 class Factorial
 def calculate_factorial(number)
-@number=number
 number_a = (1..number).to_a
 @fact=number_a.inject(1){|result,elem|result*elem}
 end
