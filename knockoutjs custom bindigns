@@ -1,0 +1,17 @@
+/**
+* ellipsis binding is used to add ellipsis and show hover text for table cells
+* when cell text content is truncated (fix-sized table)
+*/
+
+ko.bindingHandlers.ellipsis = {
+    update: function (element, valueAccessor) {
+        var $elem = $(element);
+        console.log('init ellipsis');
+        if (element.offsetWidth < element.scrollWidth && !$elem.attr('title')) {
+            $elem.css('text-overflow', 'ellipsis');
+            $elem.live('mouseenter', function () {
+                $elem.attr('title', $elem.text());
+            });
+        }
+    }
+};
