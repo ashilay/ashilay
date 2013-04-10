@@ -1,17 +1,73 @@
 /**
-* ellipsis binding is used to add ellipsis and show hover text for table cells
-* when cell text content is truncated (fix-sized table)
+* "ellipsis" binding is used to add ellipsis and show hover text for table cells
+* when cell text content is truncated (table-layout: fixed;)
+* data-bind = "ellipsis: {}" 
 */
 
 ko.bindingHandlers.ellipsis = {
     update: function (element, valueAccessor) {
         var $elem = $(element);
-        console.log('init ellipsis');
         if (element.offsetWidth < element.scrollWidth && !$elem.attr('title')) {
             $elem.css('text-overflow', 'ellipsis');
             $elem.live('mouseenter', function () {
                 $elem.attr('title', $elem.text());
             });
         }
+    }
+};
+
+/**
+* "validateNumericPaste" binding is used to validate text fields
+* in order to allow paste only digits
+* data-bind = "validateNumericPaste: {}" 
+*/
+
+ko.bindingHandlers.validateNumericPaste = {
+    update: function(element, valueAccessor) {
+        var $elem = $(element);
+        $elem.bind('paste.numeric drop.numeric', function (e) {
+            if (!e.keyCode) {
+                var inpValue = $(this).val();
+                setTimeout(function () {
+                    if (!/^\d+$/.test($(e.target).val())) {
+                        $(e.target).val(inpValue);
+                    } else {
+                        $(e.target).change();
+                    }
+                }, 0);
+            }
+        });
+    }
+};
+
+/**
+* "pie" binding is used to attach css3 PIE to specific element
+* data-bind = "pie: {}" 
+*/
+
+ko.bindingHandlers.pie = {
+    init: function (element, valueAccessor) {
+       if (!$.browser.msie) return;
+        var $elem = $(element)[0];
+
+        if (window.PIE && $elem) {
+            PIE.attach($elem);
+        }
+    }
+};
+
+/**
+* "class" binding is used to className to specific element
+* data-bind = "class: 'name'" 
+*/
+
+ko.bindingHandlers.class = {
+    update: function (element, valueAccessor) {
+        if (element['__ko__previousClassValue__']) {
+            ko.utils.toggleDomNodeCssClass(element, element['__ko__previousClassValue__'], false);
+        }
+        var value = ko.utils.unwrapObservable(valueAccessor());
+        ko.utils.toggleDomNodeCssClass(element, value, true);
+        element['__ko__previousClassValue__'] = value;
     }
 };
