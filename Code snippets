@@ -1,0 +1,24 @@
+// isScrollAreaClicked function returns true if 
+// native browser scroll area is clicked
+
+var isScrollAreaClicked = function(e) {
+    var html = $('html'),
+        document = $(window.document),
+        body = $('body');
+
+    if (html.hasClass('ie8') || html.hasClass('ie9')) {
+        if ((body.width() - e.clientX) < 0) {
+            console.log('scroll is clicked!');
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        if ((document.width() - e.clientX) < 0) {
+            console.log('scroll is clicked!');
+            return true;
+        } else {
+            return false;
+        }
+    }
+};
