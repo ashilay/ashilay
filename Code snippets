@@ -22,3 +22,24 @@ var isScrollAreaClicked = function(e) {
         }
     }
 };
+
+//
+
+
+// This snippet is used for crossbrowser storage event (IE8)
+
+if (window.addEventListener) {
+    window.addEventListener("storage", handle_storage, false);
+} else {
+    //window.attachEvent("onstorage", handle_storage);
+    window.document.attachEvent("onstorage", handle_storage);
+};
+
+function handle_storage(e) {
+    if (!e) {
+        e = window.event;
+    }
+    alert("Test storage event");
+}
+
+//
