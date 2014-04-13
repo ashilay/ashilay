@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60ad772a-b01a-463d-af3d-f9a78f8fc6ef" name="Default" comment="" />
+    <list default="true" id="60ad772a-b01a-463d-af3d-f9a78f8fc6ef" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\YallaJmeter\Authorization.jmx" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\YallaJmeter\Non filtering words v1.jmx" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\YallaJmeter\Post_to_lobby_chat.jmx" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\YallaJmeter\log.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\YallaJmeter\vars_to_file.jmx" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\hometasks\Task 5\Task_5_simple.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\hometasks\Task 5\Task_5_with_class_a.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\hometasks\Task 5\Task_5_with_class_b.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\Gemfile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\Gemfile.lock" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\README" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\Rakefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\app\assets\images\rails.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\app\assets\javascripts\application.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\app\assets\stylesheets\application.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\app\controllers\application_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\app\helpers\application_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\app\mailers\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\app\models\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\app\views\layouts\application.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\config.ru" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\config\application.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\config\boot.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\config\database.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\config\environment.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\config\environments\development.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\config\environments\production.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\config\environments\test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\config\initializers\backtrace_silencers.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\config\initializers\inflections.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\config\initializers\mime_types.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\config\initializers\secret_token.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\config\initializers\session_store.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\config\initializers\wrap_parameters.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\config\locales\en.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\config\routes.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\db\seeds.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\doc\README_FOR_APP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\lib\assets\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\lib\tasks\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\log\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\public\404.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\public\422.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\public\500.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\public\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\public\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\public\robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\script\rails" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\test\fixtures\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\test\functional\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\test\integration\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\test\performance\browsing_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\test\test_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\test\unit\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\vendor\assets\stylesheets\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\ashilay\rails projects\first_app\vendor\plugins\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Artem\IdeaProjects\test-node\maze" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="test-node.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -94,10 +154,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="9" selection-start="41" selection-end="41" vertical-scroll-proportion="0.11147541" vertical-offset="0" max-vertical-offset="305">
+            <state line="2" column="9" selection-start="41" selection-end="41" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="187">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="knockoutjs custom bindigns" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/knockoutjs custom bindigns">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="22" selection-start="202" selection-end="202" vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="1343">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Code snippets" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Code snippets">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="3" selection-start="375" selection-end="375" vertical-scroll-proportion="0.52974504" vertical-offset="0" max-vertical-offset="867">
               <folding />
             </state>
           </provider>
@@ -138,6 +222,9 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -233,6 +320,22 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="53" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="53" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="53" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="480" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="53" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="52" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="53" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="481" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -332,15 +435,15 @@
       <workItem from="1395774246742" duration="2889000" />
       <workItem from="1395779890780" duration="2066000" />
       <workItem from="1397316991904" duration="155000" />
-      <workItem from="1397318116346" duration="10338000" />
+      <workItem from="1397318116346" duration="10919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27699000" />
+    <option name="totallyTimeSpent" value="28280000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -351,15 +454,15 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43779528" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36377952" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36377952" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24743778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43779528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24743778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43779528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -380,45 +483,12 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.74336284" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/hours.vash">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.vash">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.vash">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -791,7 +861,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="9" selection-start="41" selection-end="41" vertical-scroll-proportion="0.11147541" vertical-offset="0" max-vertical-offset="305">
+        <state line="2" column="9" selection-start="41" selection-end="41" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/knockoutjs custom bindigns">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="202" selection-end="202" vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="1343">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code snippets">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="3" selection-start="375" selection-end="375" vertical-scroll-proportion="0.52974504" vertical-offset="0" max-vertical-offset="867">
           <folding />
         </state>
       </provider>
