@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>@model.title</title>
+		<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen" charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.2/angular.min.js"></script>
+	</head>
+	<body ng-app>
+	    <header>
+            @html.include('header.html')
+        </header>
+
+        <main role="main">
+            @html.block('content')
+        </main>
+
+		<footer>
+            @html.include('footer.html')
+		</footer>
+	</body>
+</html>
+
