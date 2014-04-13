@@ -1,0 +1,13 @@
+n=100
+input_number = (1..n).to_a
+input_sum=input_number.inject{|result,elem|result*elem}
+input_sum_string=input_sum.to_s
+digit_amount=input_sum_string.size
+i=0
+output=0
+while i<digit_amount
+output+=input_sum%10
+input_sum=input_sum/10
+i=i.next
+end
+p result=output.inject(){|result,elem|result+elem}

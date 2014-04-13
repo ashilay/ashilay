@@ -1,0 +1,18 @@
+class Factorial
+def calculate_factorial(number)
+number_a = (1..number).to_a
+@fact=number_a.inject(1){|result,elem|result*elem}
+end
+
+def sum_of_digits(calculated_factorial)
+digits_amount=calculated_factorial.to_s.size
+i=0
+output=[]
+while i<digits_amount
+output[i]=@fact%10
+@fact=@fact/10
+i=i.next
+end
+result=output.inject(0){|result,elem|result+elem}
+end
+end

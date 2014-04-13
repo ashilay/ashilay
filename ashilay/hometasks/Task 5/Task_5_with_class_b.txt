@@ -1,0 +1,6 @@
+require 'C:\Users\Artem\RubymineProjects\First\factorial.rb'
+
+N=100
+Calc=Factorial.new()
+calculated_factorial=Calc.calculate_factorial(N)
+puts "Sum of digits in the factorial of number #{N} is: #{Calc.sum_of_digits(calculated_factorial)}"

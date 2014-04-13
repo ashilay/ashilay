@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Authorization Test" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="" elementType="HTTPArgument">
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name"></stringProp>
+            </elementProp>
+          </collectionProp>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">qa.yallapop.cogniance.com</stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path">/texas-holdem/api/v1/</stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Content-type</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="User 1" enabled="true">
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1323384045000</longProp>
+        <longProp name="ThreadGroup.end_time">1323384045000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Authorization" enabled="true">
+          <stringProp name="TestPlan.comments">All authorization transactions, including token and clientID extractiing and saving</stringProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+            <collectionProp name="CookieManager.cookies"/>
+            <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+          </CookieManager>
+          <hashTree/>
+          <HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" testname="authorizeWithDevice" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;authorizeWithDeviceToken&quot;,&quot;params&quot;:[&quot;Jmeter&quot;],&quot;id&quot;:0}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">qa.yallapop.cogniance.com</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path"></stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.FILE_NAME"></stringProp>
+            <stringProp name="HTTPSampler.FILE_FIELD"></stringProp>
+            <stringProp name="HTTPSampler.mimetype"></stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSampler>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extracting token from responce" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">token</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;token&quot;:&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template"></stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number"></stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extracting clientId from responce" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">clientId</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;clientId&quot;:&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template"></stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number"></stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Profanity filter Lobby" enabled="true">
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <stringProp name="LoopController.loops">10</stringProp>
+          </LoopController>
+          <hashTree>
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+              <stringProp name="filename">D:\Automation Tools\Jmeter\YallaJmeter\bad_words.txt</stringProp>
+              <stringProp name="fileEncoding"></stringProp>
+              <stringProp name="variableNames">badword</stringProp>
+              <stringProp name="delimiter"></stringProp>
+              <boolProp name="quotedData">true</boolProp>
+              <boolProp name="recycle">false</boolProp>
+              <boolProp name="stopThread">true</boolProp>
+              <stringProp name="shareMode">All threads</stringProp>
+            </CSVDataSet>
+            <hashTree/>
+            <HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" testname="PostToLobbyChat" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&quot;id&quot;:0,&quot;method&quot;:&quot;postToLobbyChat&quot;,&quot;params&quot;:[&quot;${badword}&quot;],&quot;jsonrpc&quot;:&quot;2.0&quot;}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path"></stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.FILE_NAME"></stringProp>
+              <stringProp name="HTTPSampler.FILE_FIELD"></stringProp>
+              <stringProp name="HTTPSampler.mimetype"></stringProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </HTTPSampler>
+            <hashTree>
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+                <stringProp name="CounterConfig.start">1</stringProp>
+                <stringProp name="CounterConfig.end"></stringProp>
+                <stringProp name="CounterConfig.incr">1</stringProp>
+                <stringProp name="CounterConfig.name">chat_counter</stringProp>
+                <stringProp name="CounterConfig.format"></stringProp>
+                <boolProp name="CounterConfig.per_user">false</boolProp>
+              </CounterConfig>
+              <hashTree/>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">X-YallaPop-Rpc-Token</stringProp>
+                    <stringProp name="Header.value">${token_g1}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">X-YallaPop-Rpc-Client</stringProp>
+                    <stringProp name="Header.value">${clientId_g1}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Host</stringProp>
+                    <stringProp name="Header.value">qa.yallapop.cogniance.com</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+                <stringProp name="ConstantTimer.delay">100</stringProp>
+              </ConstantTimer>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">lobby</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;result&quot;:(.+?)</stringProp>
+                <stringProp name="RegexExtractor.template"></stringProp>
+                <stringProp name="RegexExtractor.default"></stringProp>
+                <stringProp name="RegexExtractor.match_number"></stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assertion: ${badword}" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1639790942">&quot;result&quot;:null</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+              <stringProp name="TestPlan.comments">If server doesn&apos;t filer bad word, this word is sent to server second time and is saved in the file</stringProp>
+              <stringProp name="IfController.condition">&quot;${lobby_g1}&quot;==&quot;t&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <HTTPSampler guiclass="HttpTestSampleGui" testclass="HTTPSampler" testname="Bad word: ${badword}" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;id&quot;:0,&quot;method&quot;:&quot;postToLobbyChat&quot;,&quot;params&quot;:[&quot;${badword}&quot;],&quot;jsonrpc&quot;:&quot;2.0&quot;}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path"></stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.FILE_NAME"></stringProp>
+                <stringProp name="HTTPSampler.FILE_FIELD"></stringProp>
+                <stringProp name="HTTPSampler.mimetype"></stringProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="TestPlan.comments">If bad word isn&apos;t filtered - it&apos;s saved into special log file</stringProp>
+              </HTTPSampler>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">X-YallaPop-Rpc-Token</stringProp>
+                      <stringProp name="Header.value">${token_g1}</stringProp>
+                    </elementProp>
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">X-YallaPop-Rpc-Client</stringProp>
+                      <stringProp name="Header.value">${clientId_g1}</stringProp>
+                    </elementProp>
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Host</stringProp>
+                      <stringProp name="Header.value">qa.yallapop.cogniance.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Non filtering words " enabled="true">
+                  <boolProp name="ResultCollector.error_logging">false</boolProp>
+                  <objProp>
+                    <name>saveConfig</name>
+                    <value class="SampleSaveConfiguration">
+                      <time>false</time>
+                      <latency>false</latency>
+                      <timestamp>false</timestamp>
+                      <success>false</success>
+                      <label>true</label>
+                      <code>false</code>
+                      <message>false</message>
+                      <threadName>false</threadName>
+                      <dataType>false</dataType>
+                      <encoding>false</encoding>
+                      <assertions>false</assertions>
+                      <subresults>false</subresults>
+                      <responseData>false</responseData>
+                      <samplerData>false</samplerData>
+                      <xml>true</xml>
+                      <fieldNames>false</fieldNames>
+                      <responseHeaders>false</responseHeaders>
+                      <requestHeaders>false</requestHeaders>
+                      <responseDataOnError>false</responseDataOnError>
+                      <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+                      <assertionsResultsToSave>0</assertionsResultsToSave>
+                    </value>
+                  </objProp>
+                  <stringProp name="filename">D:\Automation Tools\Jmeter\YallaJmeter\logs\profanity_lobby.xml</stringProp>
+                </ResultCollector>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>false</time>
+              <latency>false</latency>
+              <timestamp>false</timestamp>
+              <success>false</success>
+              <label>true</label>
+              <code>false</code>
+              <message>false</message>
+              <threadName>false</threadName>
+              <dataType>false</dataType>
+              <encoding>false</encoding>
+              <assertions>false</assertions>
+              <subresults>false</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>true</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+            </value>
+          </objProp>
+          <stringProp name="filename">D:\Automation Tools\Jmeter\YallaJmeter\logs\main_log.xml</stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
